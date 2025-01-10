@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cnt">
+    <div class="inner-cnt">
+      <header>
+        <div class="share-btn">
+          <button onclick="share_btn()"><img src="assets/share.svg" alt="share"></button>
+        </div>
+      </header>
+      <section class="profile-detail">
+        <div class="profile_picture_name">
+          <div class="profile-img">
+            <img src="assets/profile_picture.png" alt="" height="96px" width="96px">
+          </div>
+          <div class="name">
+            <span>Ajay Pandey</span>
+          </div>
+        </div>
+        <div class="social_profiles">
+          <ul>
+            <li>
+              <a href="https://x.com/_ajay_pandey_?t=y07Fr0KWwYzj6pLxDpn-5w&s=08" target="_blank">
+                <img src="assets/x.svg" alt="twitter">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_ajaypandey._?igsh=bGJrYTR6eHNscDBl" target="_blank">
+                <img src="assets/insta.svg" alt="insta">
+              </a>
+            </li>
+            <li>
+              <a href=" https://github.com/ajaypandey20" target="_blank"><img src="assets/github.svg" alt="github"></a>
+              </li>
+            <li>
+              <a href="https://www.snapchat.com/add/ajay_pandeyy?share_id=gB-G_K37u_4&locale=en-GB" target="_blank"><img src="assets/snap.svg" alt="snap"></a>
+            </li>
+            <li>
+              <a href="mailto:ajaypandeyhits@gmail.com" target="_blank">
+                <img src="assets/mail.svg" alt="mail">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="share-option-social-media flex">
+        <div class="profile-share-opt">
+          <div class="heading-share">
+            <div class="share-bio">
+              <span>Share this Bio Link</span>
+            </div>
+            <button onclick="share_cancel()" class="cancle_btn" style="cursor: pointer;"><img src="assets/cancel.svg" alt=""></button>
+          </div>
+          <div class="profile-social-media-share">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/insta-qr.jpeg" alt="" width="170px">
+                </div>
+                <div class="flip-card-back">
+                  <img src="assets/insta-qr.jpeg" alt="" width="170px">
+                  <div class="flip-card-background">
+                    <a href="assets/insta-qr.jpeg" download>
+                      <button>Download</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="other-acc-share">
+              <a href="https://x.com/intent/post?text=Check%20out%20Ajay%27s%20bio%20link!%20%0A%0AAjay" target="_blank"  class="acc flex">
+              
+                <div class="circle-bdr">
+                <img src="assets/twitter.svg" class="img-border" alt="twitter">
+                </div>
+                <div class="arrow flex">
+                  <span>Share on twitter</span>
+                  <img src="assets/arrow.svg" alt="">
+                
+              </div>
+            </a>
+
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://bio.link/julianschiavo" target="_blank"  class="acc flex">
+              
+                <div class="circle-bdr">
+                  <img src="assets/facebook.svg" class="img-border" alt="facebook">
+                </div>
+                <div class="arrow flex">
+                  <span>Share on facebook</span>
+                  <img src="assets/arrow.svg" alt="">
+                
+              </div>
+            </a>
+
+            <a href="mailto:?subject=Check out this Biolink!&body=Check out Ajay's bio link! - https://bio.link/julianschiavo" target="_blank"  class="acc flex">
+                <div class="circle-bdr">
+                  <img src="assets/mail-black.svg" class="img-border" alt="mail">
+                </div>
+                <div class="arrow flex">
+                  <span>Share on mail</span>
+                  <img src="assets/arrow.svg" alt="">
+                </div>
+             </a>
+          </div>
+          <div class="profile-bio-share">
+            <div class="copied-url">
+              <div class="copied-icon">
+                <img src="assets/copied_icon.svg" alt="copy" width="20" height="20">
+              </div>
+              <input type="text" id="textInput" value="https://bio.link/julianschi" class="input-value" disabled>
+              <button id="copyText">
+                <span id="textCopy">Copy</span>
+              </button>
+            </div>
+          </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
